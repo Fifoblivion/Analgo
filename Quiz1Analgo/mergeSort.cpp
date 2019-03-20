@@ -35,7 +35,6 @@ void mergeSort(int A[], int p, int r){
     mergeSort(A, q+1, r); //  sort
     merge(A, p, q, r); // conquer / Merge
   }
-
   cout<<"\nsorted output: ";
   for (int i = 0; i < n; i++) {
     cout<<A[i]<<" ";
