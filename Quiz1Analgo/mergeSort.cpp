@@ -35,14 +35,10 @@ void mergeSort(int A[], int p, int r){
     mergeSort(A, q+1, r); //  sort
     merge(A, p, q, r); // conquer / Merge
   }
-  cout<<"\nsorted output: ";
-  for (int i = 0; i < n; i++) {
-    cout<<A[i]<<" ";
-  }
-  cout<<endl;
 }
 int main()
 {
+    int n = 6;
     int A[]={5,4,3,2,1,6};//array of input
     int p=A[0];
     int r=A[5];
@@ -51,5 +47,10 @@ int main()
       cout<<A[i]<<" ";
     }
     mergeSort(A,p,r);
+    cout<<"\nsorted output: ";
+    for (int i = 0; i < n; i++) {
+      cout<<A[i]<<" ";
+    }
+    cout<<endl;
     return 0;
 }
